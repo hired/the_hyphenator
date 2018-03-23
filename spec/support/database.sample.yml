@@ -1,0 +1,4 @@
+postgresql:
+  database: my_gem_test
+  user:
+  password:

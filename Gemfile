@@ -1,6 +1,1 @@
-source "https://rubygems.org"
-
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
-
-# Specify your gem's dependencies in the_hyphenator.gemspec
-gemspec
+gemfiles/Gemfile.5.1.5.pg

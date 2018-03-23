@@ -1,1 +1,6 @@
-gemfiles/Gemfile.5.1.5.pg
+source 'https://rubygems.org'
+
+gemspec
+
+gem 'listen'
+gem 'sqlite3'

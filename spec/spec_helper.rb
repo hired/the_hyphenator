@@ -1,5 +1,11 @@
+require 'rails/application'
+ENV['RAILS_ENV'] = 'test'
+
+require File.expand_path('../support/rails_app/config/environment', __FILE__)
+
 require "bundler/setup"
 require "the_hyphenator"
+require "rspec/rails"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

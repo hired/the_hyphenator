@@ -1,0 +1,14 @@
+source 'https://rubygems.org'
+
+# Runtime dependencies
+gem 'rails', '5.1.5'
+gem 'pg'
+
+# Development dependencies
+gem 'rspec'
+gem 'rake'
+gem 'byebug'
+gem 'gemika'
+
+# Gem under test
+gem 'the_hyphenator', path: '..'

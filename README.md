@@ -1,8 +1,15 @@
 # TheHyphenator
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/the_hyphenator`. To experiment with that code, run `bin/console` for an interactive prompt.
+Despite the lack of evidence, SEO experts will tell you that you need to have hyphenated URLs for better SEO. Google also recommends hyphens at https://support.google.com/webmasters/answer/76329?hl=en.
 
-TODO: Delete this and the text above, and describe your gem
+Unfortunately Rails doesn't give us a way to generate hyphenated URLs, so we built one for you.
+
+Just install the gem and all declared URLs will be transformed to use hyphens:
+
+```ruby
+get '/my_routes', to: 'home#index' # generates a GET enabled route at /my-routes
+post '/my_route/:route_id/new', as: :new_route # generates a POST enabled route at /my-route/:route_id/new named 'new_route_path'
+```
 
 ## Installation
 
@@ -22,7 +29,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Just install the gem.
 
 ## Development
 

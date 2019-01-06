@@ -16,7 +16,7 @@ module TheHyphenator
       def hyphenate_path(path)
         path.split('/').map do |token|
           # ignore params
-          if token.start_with?(':')
+          if token.start_with?(':', '*')
             token
           else
             token.tr('_', '-')
